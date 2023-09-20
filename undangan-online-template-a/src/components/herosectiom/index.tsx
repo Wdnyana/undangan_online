@@ -33,13 +33,14 @@ export default function HeroSection({ children }: LayoutProps) {
                   backgroundImage: `url(${image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
+                  width: '100%',
                   transition: '3.3s ease-in-out',
                 }}
               />
             ))}
             <div className="text-textPColor relative z-30 w-full flex flex-col justify-star">
               <div
-                className="bg-bodyBg opacity-40 h-screen w-full absolute backdrop-blur-sm blur-md"
+                className="bg-bodyBg opacity-40 h-full w-full absolute backdrop-blur-sm blur-md"
                 style={{ zIndex: -1 }}
               ></div>
               <div className="mt-5 mb-3">

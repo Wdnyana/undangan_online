@@ -8,10 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        bodyBg: '#0F0F0F',
+        buttonBg: '#b09c6c',
+        textPColor: '#FFFFFE',
+      },
+      fontFamily: {
+        berkshire: ['Berkshire Swash', 'cursive'],
+        mea: ['Mea Culpa', 'cursive'],
+        dm: ['DM Sans', 'sans-serif'],
+        samarkan: ['Samarkan', 'sans-serif'],
+        bali: ['Bali Simbar', 'sans-serif'],
       },
     },
   },

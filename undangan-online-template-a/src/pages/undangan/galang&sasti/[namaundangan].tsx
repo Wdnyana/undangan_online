@@ -3,8 +3,8 @@
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import Popup from '../../../components/popup'
-import Layout from '@/components/layouts'
 import HeroSection from '@/components/herosectiom'
+import Section1 from '@/components/section/section1'
 
 export default function HalamanUndangan() {
   const router = useRouter()
@@ -25,7 +25,7 @@ export default function HalamanUndangan() {
                 Kepada Yth. <br />
                 Bapak/Ibu/Saudara/i :
               </p>
-              <h1 className="text-2xl lg:text-4xl font-berkshire my-4">
+              <h1 className="text-2xl lg:text-4xl font-berkshire my-4 capitalize">
                 {namaundangan}
               </h1>
               <p className="font-dm text-base">
@@ -35,7 +35,9 @@ export default function HalamanUndangan() {
           </Popup>
         </div>
       </HeroSection>
-      <Layout></Layout>
+      <div>
+        <Section1 />
+      </div>
     </>
   )
 }
